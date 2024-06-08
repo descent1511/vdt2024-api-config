@@ -75,11 +75,11 @@ resources: {}
 
 livenessProbe:
   httpGet:
-    path: /
+    path: /v1/users
     port: 8000
 readinessProbe:
   httpGet:
-    path: /
+    path: /v1/users
     port: 8000
 
 autoscaling:
