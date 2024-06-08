@@ -115,7 +115,7 @@ secrets:
     DB_USER: cG9zdGdyZXM=
     DB_PASS: MTUxMTIwMDI=
     DB_NAME: VkRU
-    DB_HOST: ZGI=
+    DB_HOST: cG9zdGdyZXNxbA==
     SECRET_KEY: SXJSQ1VSZWJ4Zw==
     BUCKET_NAME: dmR0MjAyNA==
     BUCKET_REGION: dXMtZWFzdC0x
