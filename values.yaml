@@ -118,3 +118,7 @@ secrets:
     ACCESS_KEY: QUtJQTJKSDRVWUtQRU9BVk82RUg=
     SECRET_ACCESS_KEY: YTE4dERSd1dGSjRUR0VqT1FzREdhRW9tcEtPeU1yek5QY3RYVWVrOU8=
 
+servicemonitor:
+  enabled: true
+  interval: 30s
+  path: /metrics
