@@ -122,3 +122,4 @@ servicemonitor:
   enabled: true
   interval: 30s
   path: /metrics
+  namespace: monitoring
