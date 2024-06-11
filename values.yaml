@@ -44,6 +44,7 @@ service:
   type: NodePort
   nodePort: 30001
   port: 8000
+  portName: api
 
 ingress:
   enabled: false
@@ -118,8 +119,9 @@ secrets:
     ACCESS_KEY: QUtJQTJKSDRVWUtQRU9BVk82RUg=
     SECRET_ACCESS_KEY: YTE4dERSd1dGSjRUR0VqT1FzREdhRW9tcEtPeU1yek5QY3RYVWVrOU8=
 
-servicemonitor:
+serviceMonitor:
   enabled: true
   interval: 30s
-  path: /metrics
-  namespace: monitoring
+  scrapeTimeout: 10s
+  labels:
+    release: prometheus-operator
