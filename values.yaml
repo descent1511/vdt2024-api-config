@@ -58,9 +58,9 @@ ingress:
         - path: /
           pathType: Prefix
   tls: []
-   - secretName: chart-example-tls
-     hosts:
-       - vdt2024.local
+    - secretName: chart-example-tls
+      hosts:
+        - vdt2024.local
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
@@ -131,4 +131,3 @@ certManager:
   issuerName: letsencrypt-prod
   email: truong.le11474@gmail.com
   issuerSecretName: letsencrypt-prod
-
