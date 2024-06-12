@@ -57,7 +57,7 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
-  tls: []
+  tls:
     - secretName: chart-example-tls
       hosts:
         - vdt2024.local
