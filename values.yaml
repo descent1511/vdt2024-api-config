@@ -125,4 +125,4 @@ serviceMonitor:
   scrapeTimeout: 10s
   namespace: monitoring
   labels:
-    release: prometheus-operator
+    release: prometheus
