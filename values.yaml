@@ -55,8 +55,13 @@ ingress:
   hosts:
     - host: vdt2024.com
       paths:
-        - path: /
+        - path: /api
           pathType: Prefix
+          backend:
+            service:
+              name: vdt-2024-api-chart
+              port:
+                number: 8000
   tls:
     - secretName: vdt2024-tls
       hosts:
