@@ -54,16 +54,9 @@ ingress:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
   hosts:
     - host: vdt2024.com
-      http:
-        paths:
+      paths:
         - path: /
           pathType: Prefix
-          backend:
-            service:
-              name: vdt-2024-api-chart
-              port:
-                number: 8000
-        rules:
   tls:
     - secretName: vdt2024-tls
       hosts:
